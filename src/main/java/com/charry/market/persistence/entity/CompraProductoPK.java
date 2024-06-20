@@ -16,6 +16,6 @@ public class CompraProductoPK implements Serializable {
     @Column(name = "id_compra")
     private Integer idCompra;
 
-    @Column(name = "idProducto")
+    @Column(name = "id_producto")
     private Integer idProducto;
 }
