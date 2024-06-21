@@ -7,19 +7,18 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "compras_producto")
+@Table(name = "compras_productos")
 public class CompraProducto {
 
     @EmbeddedId
     private CompraProductoPK id;
 
     private Integer cantidad;
-
     private Double total;
-
     private Boolean estado;
 
     @ManyToOne
+    @MapsId("idCompra")
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 

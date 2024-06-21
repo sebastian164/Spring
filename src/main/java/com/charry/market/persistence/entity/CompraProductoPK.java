@@ -8,9 +8,9 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-@Embeddable
 @Getter
 @Setter
+@Embeddable
 public class CompraProductoPK implements Serializable {
 
     @Column(name = "id_compra")
